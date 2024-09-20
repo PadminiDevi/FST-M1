@@ -7,7 +7,7 @@ import org.apache.commons.io.FileUtils;
 
 public class Activity14{
     public static void main(String[] args) throws IOException {
-        File file = new File("C:\\Users\\IpsitaBose\\Desktop\\Java Activities\\fst-m1-java\\src\\Sample\\newFile.txt");
+        File file = new File("C:\\Users\\004OVB744\\Desktop\\Java Activities\\fst-m1-java\\src\\Sample\\newFile.txt");
         boolean fStatus = file.createNewFile();
         if(fStatus) {
             System.out.println("File created successfully!");
@@ -15,7 +15,7 @@ public class Activity14{
             System.out.println("File already exists at this path.");
         }
 
-        File fileutil = FileUtils.getFile("C:\\Users\\IpsitaBose\\Desktop\\Java Activities\\fst-m1-java\\src\\Sample\\newFile.txt");
+        File fileutil = FileUtils.getFile("C:\\Users\\004OVB744\\Desktop\\Java Activities\\fst-m1-java\\src\\Sample\\newFile.txt");
         System.out.println("Content of file: \n"+ FileUtils.readFileToString(fileutil, "UTF8"));
 
         File newDir = new File("resources");
